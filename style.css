@@ -217,51 +217,41 @@ h3 {
     font-size: 2rem;
 }
 
-.trends {
-    position: relative;
-}
-
-.trends-words {
-    width: 50%;
-    float: left;
-    padding: 40px 80px 40px 0;
-}
-
-.trends-words h3{
-    width: 60%;
-}
-
-.trends-image {
-    width: 65%;
-    position: absolute;
-    bottom: 0;
-    right: -15%;
-}
-
+.trends, 
 .bts {
     position: relative;
-    height: 500px;
 }
 
-.bts-image {
-    width: 800px;
-    height: 800px;
+.trends img, 
+.bts img {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -15%;
-}
-
-.bts-image img {
+    width: 50%;
+    height: 500px;
     object-fit: cover;
 }
 
+.trends img {
+    right: 0;
+}
+
+.trends-words, 
 .bts-words {
     width: 50%;
-    float: right;
-    height: 380px;
-    padding: 40px 0 0px 40px;
+    height: 500px;
 }
+
+.trends-words {
+    padding: 100px 60px 0 0;
+}
+
+.bts img {
+    left: 0;
+}
+
+.bts-words {
+    margin-left: 50%
+}
+
 
 
 .second-nav {
