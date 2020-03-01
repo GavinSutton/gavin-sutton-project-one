@@ -8,12 +8,12 @@
     .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
     .skip-link {
+    color: black;
+    background: white;
     position: absolute;
     left: -1000px;
     top: 5px;
     z-index: 999;
-    background: white;
-    color: black;
     }
 
     .skip-link:focus {
@@ -21,16 +21,6 @@
     }
 /*  Setup end */
 
-/* Stripping styles start */
-ul {
-    list-style: none;
-}
-
-a, 
-li {
-    text-decoration: none;
-}
-/* Stripping styles end */
 
 
 /*  Basic styles start */
@@ -52,6 +42,24 @@ button,
 main a,
 .second-nav li {
     font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+main .wrapper a {
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a, 
+li {
+    text-decoration: none;
 }
 
 a {
@@ -76,13 +84,15 @@ img {
 }
 /*  Basic styles end */
 
+
+
 /*  Header styles start */
 header {
+    color: white;
     background: url(one-magazine-assets/image-1.jpg) no-repeat center;
     background-size: cover;
     height: 90vh;
     min-height: 600px;
-    color: white;
     margin: 0 auto;
     position: relative;
 }
@@ -92,9 +102,9 @@ nav {
 }
 
 nav p {
-    float: left;
     font-size: 3rem;
     font-style: italic;
+    float: left;
 }
 
 nav ul {
@@ -102,18 +112,30 @@ nav ul {
 }
 
 nav li {
-    float: left;
-    text-transform: uppercase;
     font-size: 1.1rem;
+    float: left;
 }
 
 nav a {
     padding: 10px 20px;
     border: 1px solid transparent;
+    text-transform: uppercase;
 }
 
 nav a:hover {
     border: 1px solid white;
+}
+
+header h1 {
+    font-size: 9.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+h1>span {
+    font-size: 7rem;
+    line-height: 0.4;
+    display: block;
 }
 
 .fa-bars {
@@ -123,21 +145,6 @@ nav a:hover {
     right: 30px;
     top: 30px;
     visibility: hidden;
-}
-
-header h1 {
-    font-size: 9.5rem;
-    font-family: 'Cormorant Garamond';
-    font-weight: 500;
-    font-style: italic;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h1>span {
-    display: block;
-    font-size: 7rem;
-    line-height: 0.4;
 }
 
 .title {
@@ -151,12 +158,22 @@ h1>span {
 }
 
 .social li {
+    font-size: 1.5rem;
     padding: 10px;
-    font-size: 1.5rem
 }
 /*  Header styles end */
 
+
+
 /*  Main styles start */
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
 .news-articles h2 {
     text-align: center;
 }
@@ -171,16 +188,7 @@ h1>span {
     float: left;
 }
 
-h2 {
-    color: #000000;
-    font-size: 2.5rem;
-    font-weight: 600; 
-}
-
-/* May need to change image to display: block; incase of white space */
-
 .blog {
-    height: auto;
     padding: 80px 0 0;
     margin-bottom: 80px;
     position: relative;
@@ -192,35 +200,25 @@ h2 {
     margin-right: 20px;
 }
 
-.blog h2 {
-    text-align: left;
-}
-
 .blog a {
     position: absolute;
     bottom: 0;
 }
 
 main .wrapper a {
-    text-transform: uppercase;
+    color: white;
     background-color: rgba(24, 52, 153, 0.753);
     font-size: 1rem;
-    color: white;
-    margin-top: 20px;
     padding: 12px 30px;
+    margin-top: 20px;
     display: inline-block;
     border: 1px solid transparent;
 }
 
 main .wrapper a:hover {
-    background-color: white;
     color: rgba(24, 52, 153, 0.753);
+    background-color: white;
     border: 1px solid rgba(24, 52, 153, 0.753);
-}
-
-h3 {
-    font-size: 2rem;
-    font-weight: 600;
 }
 
 .trends, 
@@ -250,19 +248,15 @@ h3 {
     padding: 110px 60px 0 0;
 }
 
-.bts img {
-    left: 0;
-}
-
 .bts-text {
-    margin-left: 50%;
     padding: 120px 0 0 60px;
+    margin-left: 50%;
 }
 
 .second-nav {
+    color: white;
     background: url(one-magazine-assets/one-magazine-footer.jpg);
     background-size: cover;
-    color: white;
     text-align: center;
     padding-right: 100px;
 }
@@ -270,7 +264,6 @@ h3 {
 .second-nav li {
     display: inline-block;
     padding: 70px 90px;
-    text-transform: uppercase;
 }
 
 .second-nav li i {
@@ -286,15 +279,13 @@ h3 {
 .second-nav a:hover {
     color: black;
 }
-
 /*  Main styles end */
 
-/*  Footer styles start */
 
+
+/*  Footer styles start */
 footer h4 {
-    text-transform: uppercase;
     font-size: 1.5rem;
-    font-weight: 600;
 }
 
 footer {
@@ -324,10 +315,9 @@ form {
 }
 
 button {
-    font-size: 1.1rem;
-    text-transform: uppercase;
     color: white;
     background-color: black;
+    font-size: 1.1rem;
     border: none;
     height: 50px;
     width: 150px;
@@ -345,8 +335,8 @@ input {
 }
 
 input[placeholder] {
-    padding: 20px;
     font-size: 1.1rem;
+    padding: 20px;
 }
 
 .contact {
@@ -382,7 +372,7 @@ input[placeholder] {
 /*  Footer styles end */
 
 
-/* Big Boys */
+/* Media Queries start */
 @media (max-width: 1220px) {
     .blog h2 {
         font-size: 2rem;
@@ -407,7 +397,6 @@ input[placeholder] {
     }
 }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
     header {
@@ -419,6 +408,10 @@ input[placeholder] {
 
     .fa-bars {
         visibility: visible;
+    }
+
+    h3 {
+        font-size: 1.4rem;
     }
 
     .social {
@@ -453,31 +446,6 @@ input[placeholder] {
         text-align:  center;
     }
 
-    .subscribe {
-        width: 100%; 
-        float: none;
-        text-align: center;
-        padding-right: 0;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .contact,
-    .footer-nav {
-        width: 50%;
-        padding-top: 30px;
-    }
-
-    footer section {
-        padding: 50px 0;
-    }
-
     .bts-text,
     .trends-text {
         width: 100%;
@@ -498,10 +466,6 @@ input[placeholder] {
         margin-left: 0;
     }
 
-    h3 {
-        font-size: 1.4rem;
-    }
-
     .second-nav li {
         padding: 70px 30px;
     }
@@ -509,9 +473,33 @@ input[placeholder] {
     .second-nav {
         padding-right: 20px;
     }
+
+    .subscribe {
+        width: 100%; 
+        float: none;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .contact,
+    .footer-nav {
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    footer section {
+        padding: 50px 0;
+    }
 }
 
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
     header {
@@ -535,7 +523,6 @@ input[placeholder] {
     
 }
 
-/* Landscape phones and down */
 @media (max-width: 600px) {
 
     .wrapper {
@@ -556,8 +543,8 @@ input[placeholder] {
 
     main a {
         font-size: 1.1rem;
-        margin-top: 20px;
         padding: 23px 43px;
+        margin-top: 20px;
     }
 
     .second-nav {
@@ -578,7 +565,6 @@ input[placeholder] {
     }
 }
 
-/* Last One */
 @media (max-width: 420px) {
 
     .blog h2 {
@@ -598,6 +584,3 @@ input[placeholder] {
         font-size: 1rem;
     }
 }
-
-
-/* compress at the end? https://csscompressor.com/ */
